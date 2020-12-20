@@ -14,6 +14,10 @@ import java.util.List;
 
 public class NBPParser {
     public static void main(String[] args) throws IOException {
+
+        NBPRatesReader reader = new NBPRatesReader();
+      List<Rate>  rates = reader.GetRates();
+        int i = rates.size();
         Test1();
         Test2();
     }
